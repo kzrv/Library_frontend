@@ -1,0 +1,130 @@
+
+.book-card {
+    display: block;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    transition: 0.2s all ease-in-out;
+    width: 60%;
+    box-shadow: 3px 3px 7px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+    float: left;
+    border-radius: 3px;
+}
+.book-card:hover {
+    border: 1px solid #000;
+    background-color: #f6f6f6;
+}
+
+@media only screen and (max-width: 1700px) {
+    .book-card {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .book-card {
+        width: 95%;
+    }
+}
+.book-card-inner {
+    display: block;
+    transition: 0.5s all ease-in-out;
+    position: relative;
+}
+
+.book-cover-div {
+    width: 250px;
+    height: 250px;
+    float: left;
+    position: relative;
+}
+
+.book-cover {
+    max-height: 230px;
+    max-width: 230px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.book-info-div {
+    float: left;
+    padding: 10px 10px 10px 0;
+    width: calc(100% - 260px);
+}
+
+.book-title {
+    margin: 0;
+    word-wrap: break-word;
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+.book-author {
+    text-align: left;
+    padding: 0 5px 10px 5px;
+    font-size: 14px;
+    color: #222;
+    font-weight: bold;
+}
+
+.book-isbn {
+    text-align: left;
+    padding: 0 5px 10px 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.book-image {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-self: center;
+    min-height: 1vh;
+    margin: 0 auto;
+}
+
+.book-card-button {
+    border-radius: 30px;
+    background-color: #96f696;
+    color: #000;
+    border: 1px solid #999;
+    font-size: 15px;
+    margin: 0;
+    position: absolute;
+    right: 7px;
+    transition: 0.2s all ease-in-out;
+    height: 26px;
+    padding: 0 7px;
+    cursor: pointer;
+    box-shadow: inset 1px 4px 1px rgba(255, 255, 255, 0.7), inset -1px -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.div-button {
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    height: 30px;
+}
+
+.book-card-button:hover {
+    background-color: #06bb06;
+}
+
+.link-details {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: white;
+    font-weight: 700;
+    margin-top: auto;
+    outline: 0;
+    border: 0;
+    background-color: orange;
+    text-align: center;
+}
+
+.div-form {
+    display: none;
+}
